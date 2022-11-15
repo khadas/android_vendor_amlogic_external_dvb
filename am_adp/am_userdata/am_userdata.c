@@ -240,7 +240,7 @@ static int userdata_package_write(AM_USERDATA_Device_t *dev, const uint8_t *buf,
 	cnt = userdata_ring_buf_free(&dev->pkg_buf);
 	if (cnt < (int)(size+sizeof(cnt)))
 	{
-		AM_DEBUG(1, "write userdata error: data size to large, %d > %d", size+sizeof(cnt), cnt);
+		//AM_DEBUG(1, "write userdata error: data size to large, %d > %d", size+sizeof(cnt), cnt);
 		ret = 0;
 	}
 	else
